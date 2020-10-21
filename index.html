@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha364-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK26anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Here is the jumbotron nav type thing -->
+    <div class="jumbotron jumbotron-fluid text-center bg-dark text-white p-2">
+        <div class="container">
+            <h1 class="display-5">Weather Dashboard</h1>
+            <p class="lead">Enjoy this site created for your convenience!</p>
+        </div>
+    </div>
+
+    <!-- This is the search function -->
+    <div class="container-fluid row m-1">
+        <div class="card bg-light" style="width: 30%;">
+            <div class="card-body">
+                <h5 class="card-title">Search for a City</h5>
+                <form class="form-inline ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button
+                            class="fas fa-search fa-md btn btn-outline-primary text-white my-2 my-sm-0 bg-primary"></button>
+                </form>
+                <ul class="list-group pt-3">
+                    <li class="list-group-item">1</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- This is the large card that houses the two sections below -->
+        <div class="card ml-3 border-0" style="width: 65%;">
+            <div class="card m-3">
+                <div class="card-body">
+                    <h5 class="card-title">City date</h5>
+                    <i id="icon-header"></i>
+                    <p id="main-card-temp" class="font-weight-light h6">Temperature:</p>
+                    <p id="main-card-humidity" class="font-weight-light h6">Humidity:</p>
+                    <p id="wind-speed" class="font-weight-light h6">Wind Speed:</p>
+                    <p id="uv-index" class="font-weight-light h6">UV Index:</p>
+                </div>
+            </div>
+            <h5 class="card-title ml-4">5-Day Forecast</h5>
+
+            <!-- Card Group -->
+            <div class="card-group ml-3 mr-3 mb-3">
+
+                <!-- First day weather card -->
+                <div class="card mr-2 border rounded bg-primary text-white">
+                    <div class="card-body p-1 font-weight-light">
+                        <p class="card-title" id="day1"></p>
+                        <i id="icon1"></i>
+                        <p id="temp1" class="card-text">Temp:</p>
+                        <p id="humidity1" class="card-text">Humidity:</p>
+                    </div>
+                </div>
+                <!-- Second day weather card -->
+                <div class="card mr-2 border rounded bg-primary text-white">
+                    <div class="card-body p-1 font-weight-light">
+                        <p class="card-title" id="day2"></p>
+                        <i id="icon2"></i>
+                        <p id="temp2" class="card-text">Temp:</p>
+                        <p id="humidity2" class="card-text">Humidity:</p>
+                    </div>
+                </div>
+                <!-- Third day weather card -->
+                <div class="card mr-2 border rounded bg-primary text-white">
+                    <div class="card-body p-1 font-weight-light">
+                        <p class="card-title" id="day3"></p>
+                        <i id="icon3"></i>
+                        <p id="temp3" class="card-text">Temp:</p>
+                        <p id="humidity3" class="card-text">Humidity:</p>
+                    </div>
+                </div>
+                <!-- Fourth day weather card -->
+                <div class="card mr-2 border rounded bg-primary text-white">
+                    <div class="card-body p-1 font-weight-light">
+                        <p class="card-title" id="day4"></p>
+                        <i id="icon4"></i>
+                        <p id="temp4" class="card-text">Temp:</p>
+                        <p id="humidity4" class="card-text">Humidity:</p>
+                    </div>
+                </div>
+                <!-- Fifth day weather card -->
+                <div class="card mr-2 border rounded bg-primary text-white">
+                    <div class="card-body p-1 font-weight-light">
+                        <p class="card-title" id="day5"></p>
+                        <i id="icon5"></i>
+                        <p id="temp5" class="card-text">Temp:</p>
+                        <p id="humidity5" class="card-text">Humidity:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+
+
+<!-- <div class="card card-group text-white bg-primary mb-3 d-inline ml-3" style="max-width: 10rem;">
+  <div class="card-header">Date</div>
+  <div class="card-body">
+      <i id="icon1"></i>
+    <p id="temp1" class="card-text">Temp:</p>
+    <p id="humidity1" class="card-text">Humidity:</p>
+  </div>
+  
+   <div class="card-header">Date</div>
+  <div class="card-body">
+      <i id="icon2"></i>
+    <p id="temp2" class="card-text">Temp:</p>
+    <p id="humidity2" class="card-text">Humidity:</p>
+  </div> -->
