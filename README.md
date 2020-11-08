@@ -49,4 +49,4 @@ Link to the GitHub live page: https://jasmineteters.github.io/5DayWeatherApp/
 
 ## Gif of App:
 
-![](/5-Day Forecast.gif)
+![](/5DayForecast.gif)
